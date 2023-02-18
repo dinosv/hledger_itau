@@ -1,0 +1,18 @@
+# hledger csv conversion rules for 04puntos
+# cf http://hledger.org/manual#csv-files
+
+account1 assets:bancos:puntos
+
+fields date, description, amount1
+
+skip 1
+newest-first
+
+date-format %-d/%-m/%Y
+#date-format %-m/%-d/%Y
+#date-format %Y-%h-%d
+
+currency ITP
+
+account2 revenues:puntostarjeta:itau
+

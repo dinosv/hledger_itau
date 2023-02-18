@@ -1,0 +1,16 @@
+skip 2
+fields date,description,amount-in,amount-out
+date-format %-d/%-m/%Y
+currency CLP
+newest-first
+
+account2 assets:bancos:cuentacorriente:itauclp
+
+if ,,,
+ end
+
+if 
+Pago Tarjeta De Credito
+ account1 liabilities:tarjetacredito:itauclp
+
+

@@ -1,0 +1,23 @@
+skip 2
+fields date,description,amount
+date-format %-d/%-m/%Y
+currency CLP
+newest-first
+
+account2 liabilities:tarjetacredito:itauclp
+
+if ,,
+ end
+
+if 
+MONTO CANCELADO PAGO NORMAL
+MONTO CANCELADO 
+ account1 assets:bancos:itau
+
+if
+RAPPI
+ account1 expenses:comida:delivery
+
+if 
+SALCOBRAND
+ account1 expenses:pers:farmacia
