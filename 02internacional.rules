@@ -1,0 +1,16 @@
+skip 2
+fields date,description,amount
+date-format %-d/%-m/%Y
+currency USD
+newest-first
+
+account2 liabilities:tarjetacredito:itauusd
+
+if ,,
+ end
+
+if
+GITHUB INC 
+ account1 expenses:suscripcion:github                            
+
+
